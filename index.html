@@ -12,12 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Jorge's Form</title>
 </head>
 
 <body>
     <div class="container mt-2 p-0" style="outline-style: inset;">
-        <div class="Titulo_del_form" style="display: flex; background-color: rgb(211, 211, 211)">
+        <div class="Titulo_del_form">
             <h1 class="ms-2">Ejemplo de Pago</h1>
         </div>
         <div class="primer_campo d-flex">
@@ -29,8 +30,9 @@
                     <div class="row">
                         <div class="col-5">
                             <div>
-                                <label for="Numero_de_tarjeta" class="form-label"><strong>Numero de
-                                        Tarjeta</strong></label>
+                                <label for="Numero_de_tarjeta" class="form-label">
+                                    <strong>Numero de Tarjeta</strong>
+                                </label>
                                 <input type="text" class="form-control" id="Numero_de_tarjeta"
                                     placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxx">
                             </div>
@@ -43,7 +45,9 @@
                         </div>
                         <div class="col-3">
                             <div>
-                                <label for="monto" class="form-label"><strong>Monto</strong></label>
+                                <label for="monto" class="form-label">
+                                    <strong>Monto</strong>
+                                </label>
                                 <div class="d-flex">
                                     <i class="fa-solid fa-dollar-sign my-auto pe-1"></i>
                                     <input type="text" class="form-control" id="monto" placeholder="0,00">
@@ -59,13 +63,17 @@
                 <div class="row">
                     <div class="col-6">
                         <div>
-                            <label for="Nombre_tarjeta" class="form-label"><strong>Nombre</strong></label>
+                            <label for="Nombre_tarjeta" class="form-label">
+                                <strong>Nombre</strong>
+                            </label>
                             <input type="text" class="form-control" id="Nombre_tarjeta">
                         </div>
                     </div>
                     <div class="col-6">
                         <div>
-                            <label for="Apellido_tarjeta" class="form-label"><strong>Apellido</strong></label>
+                            <label for="Apellido_tarjeta" class="form-label">
+                                <strong>Apellido</strong>
+                            </label>
                             <input type="text" class="form-control" id="Apellido_tarjeta">
                         </div>
                     </div>
@@ -78,13 +86,17 @@
                 <div class="row">
                     <div class="col-6">
                         <div>
-                            <label for="ciudad" class="form-label"><strong>Ciudad</strong></label>
+                            <label for="ciudad" class="form-label">
+                                <strong>Ciudad</strong>
+                            </label>
                             <input type="text" class="form-control" id="ciudad">
                         </div>
                     </div>
                     <div class="col-3">
                         <div>
-                            <label for="estado" class="form-label"><strong>Estado</strong></label>
+                            <label for="estado" class="form-label">
+                                <strong>Estado</strong>
+                            </label>
                             <select class="form-select" aria-label="menu_de_estados">
                                 <option selected>Seleccione un Estado</option>
                                 <option value="carabobo">Carabobo</option>
@@ -95,7 +107,9 @@
                     </div>
                     <div class="col-3">
                         <div>
-                            <label for="codigo_postal" class="form-label"><strong>Codigo Postal</strong></label>
+                            <label for="codigo_postal" class="form-label">
+                                <strong>Codigo Postal</strong>
+                            </label>
                             <input type="text" class="form-control" id="codigo_postal">
                         </div>
                     </div>
@@ -107,7 +121,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <label for="Nombre_tarjeta" class="form-label"><strong>Nosotros aceptamos:</strong></label>
+                        <label for="Nombre_tarjeta" class="form-label">
+                            <strong>Nosotros aceptamos:</strong>
+                        </label>
                         <div class="d-flex btn-group w-50 me-2" role="group" aria-label="Second group">
                             <button type="button" class="btn btn-secondary">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
@@ -120,30 +136,35 @@
                                     name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     <i class="fa-brands fa-cc-visa"></i>
-                                </label></button>
+                                </label>
+                            </button>
                             <button type="button" class="btn btn-secondary"><input class="form-check-input" type="radio"
                                     name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     <i class="fa-brands fa-cc-paypal"></i>
-                                </label></button>
+                                </label>
+                            </button>
                             <button type="button" class="btn btn-secondary"><input class="form-check-input" type="radio"
                                     name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     <i class="fa-brands fa-cc-apple-pay"></i>
-                                </label></button>
+                                </label>
+                            </button>
                         </div>
                     </div>
                     <div class="col-6">
-                        <label for="mensaje" class="form-label"><strong>Mensaje</strong></label>
+                        <label for="mensaje" class="form-label">
+                            <strong>Mensaje</strong>
+                        </label>
                         <div class="form-floating">
-                            <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <textarea class="form-control" id="floating-Text-area2"></textarea>
                         </div>
                         <p>Agrega cualquier nota aqui</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="Titulo_del_form" style="display: flex; justify-content: end; background-color: rgb(211, 211, 211);">
+        <div class="Titulo_del_form">
             <button type="button" class="btn btn-secondary m-2">Cancelar</button>
             <button type="button" class="btn btn-primary m-2">Enviar</button>
         </div>

@@ -1,0 +1,9 @@
+.Titulo_del_form {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(211, 211, 211);
+}
+
+#floating-Text-area2 {
+    height: 100px;
+}
